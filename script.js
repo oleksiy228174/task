@@ -1,30 +1,37 @@
-body{
-  font-family: 'Inter', sans-serif;
-  background: ‎#ffffff‎;
-  color: #333;
-  margin: 0;
-  padding: 0;
+(function() {
+  const STORAGE_KEY =
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function toggleTask(id, compleated) {
+  const tasks - loadTasks();
+  const i = tasks.findIndex(t=>t.id===id);
+  if(i!==-1){ tasks[i].completed = completed; saveTasks(tasks);}
 }
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  alighn-items: center;
-  background-color:#EBFFC2;
-  padding: 10 px, 40px;
-  flex-wrap: wrap;
-}
-.logo {
-  width: 120px;
-  height: 120px;
-  background-image: url('https://i.postimg.cc/FKHtq7k2/TF-2.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+function removeTask(id){
+  const tasks = loadTasks().filter(t=>t.id!==id);
+  saveTasks(tasks);
 }
 
-.logo-block {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+function renderList(containerSelector, filterFn) {
+  const container = document.querySelector(containorSelector);
+  if(!container) return;
 }
+
+const tasks = loadTasks()
+.sort ((a,b)=>Number(a.compleated)- Number (b.compleated) 
