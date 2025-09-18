@@ -28,3 +28,165 @@ body{
   align-items: center;
   gap: 10px;
 }
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.logo-text h4 {
+  margin:0;
+  color: #6C8F27;
+  font-size: 18px;
+  font-femily: 'Krona One', sans-serif;
+}
+
+.nav-menu{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active{
+  color: #6C8F27;
+  text-decoration:underline;
+}
+
+.page {
+  display: flex;
+  jystify-content: center;
+  margin-top: 30 px;
+}
+
+.task-group {
+  position: relative;
+}
+
+.task-header {
+  display: flex;
+  align-items: centre;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.task-box {
+  border-radius: 20px;
+  border: 3px solod #C0FF42;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+}
+
+.task {
+  display: flex;
+  align-items: centre;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #C0FF42;
+  transition: background 0.2s;
+}
+
+.task:hover{
+  background: #F7FFDA
+}
+
+.task input [type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #C0FF42;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task spam {
+  flex: 1;
+}
+
+.task.done span{
+  text-decoration: line-trough;
+  color: gray;
+}
+
+.task .delete-task {
+  background: #fff
+  color: #d00;
+  border: 1px solid #C0FF42;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.task .delete-task:hover {
+  background: #fdd;
+}
+
+#task-form input [type="text"],
+#task-form input [type="date"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #C0FF42;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#task-form button {
+    padding: 10px 20px;
+    background: #6C8F27;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#task-form button:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-text h1 {
+    font-size: 32px;
+}
+
+.nav-menu{
+  flex-derection: column;
+  font-size: 18px;
+}
+
+.task-box {
+  max-width: 100%
+}
+}
